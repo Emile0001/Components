@@ -6,3 +6,14 @@
 body {
   background-color: aquamarine;
 }
+
+.accordion-section {
+  margin: 20px;
+  border: 1px solid rgb(133, 133, 133);
+  padding: 20px;
+}
+.accordion-title {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
