@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter" sans-serif;
+  line-height: 1;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 80px;
+
+  justify-content: center;
+  align-items: center;
+}
+/* position and size the accordion buttons */
+.panel {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  grid-template-rows: 90px auto auto;
+  width: 700px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.panel {
+  background-color: white;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.12);
+  border: none;
+}
+
+.number {
+  font-size: 22px;
+  color: gray;
+
+  align-self: center;
+}
+.main-text {
+  font-size: 25px;
+
+  text-align: start;
+  align-self: center;
+}
+.icon {
+  fill: green;
+  height: 22px;
+  margin: 12px;
+  align-self: center;
+}
+
+/* place the section that will be hidden in the correct grid area */
+.hidden {
+  grid-column: 2;
+}
+
+.hidden-text {
+  text-align: start;
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* LIST ITEMS: Flex with direction column makes it easier to align and add spacing */
+.hidden-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.hidden-list li {
+  margin-left: 16px;
+  text-align: start;
+  color: grey;
+  font-size: 15px;
+}
+
+.panel:hover {
+  cursor: pointer;
+}
+
+.inactive {
+  display: none;
+}
