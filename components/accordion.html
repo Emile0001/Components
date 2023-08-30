@@ -1,114 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/accordion.css" />
-    <script src="../scripts/accordion.js"></script>
-    <title>Accordion</title>
-  </head>
-  <body>
-    <div class="accordion">
-      <button class="panel">
-        <p class="number">01</p>
-        <p class="main-text">Where are these chairs assembled</p>
-        <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-        >
-          <path
-            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-          />
-        </svg>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/accordion.css" />
+        <script src="../scripts/accordion.js" defer></script>
+        <title>Accordion</title>
+    </head>
+    <body>
+        <div class="accordion">
+            <button class="accordion__panel">
+                <p class="panel__number">01</p>
+                <p class="panel__title">Where are these chairs assembled</p>
+                <svg
+                    class="panel__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                >
+                    <path
+                        d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                    />
+                </svg>
 
-        <div class="inactive">
-          <p class="hidden-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
-            quaerat, exercitationem tempora architecto pariatur temporibus
-            aspernatur. Nulla incidunt officia doloribus amet.
-          </p>
-          <ul class="hidden-list">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima.
-            </li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus!
-            </li>
-          </ul>
+                <div class="panel__wrapper--open">
+                    <p class="panel-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quas quaerat, exercitationem tempora architecto
+                        pariatur temporibus aspernatur. Nulla incidunt officia
+                        doloribus amet.
+                    </p>
+                    <ul class="panel-list">
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Minima.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </li>
+                        <li>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus!
+                        </li>
+                    </ul>
+                </div>
+            </button>
+
+            <button class="accordion__panel">
+                <p class="panel__number">02</p>
+                <p class="panel__title">
+                    How long do I have to return my chair?
+                </p>
+                <svg
+                    class="panel__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                >
+                    <path
+                        d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                    />
+                </svg>
+
+                <div class="panel__wrapper--open">
+                    <p class="panel-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quas quaerat, exercitationem tempora architecto
+                        pariatur temporibus aspernatur. Nulla incidunt officia
+                        doloribus amet.
+                    </p>
+                    <ul class="panel-list">
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Minima.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </li>
+                        <li>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus!
+                        </li>
+                    </ul>
+                </div>
+            </button>
+            <button class="accordion__panel">
+                <p class="panel__number">03</p>
+                <p class="panel__title">
+                    Do you ship to countries outside the EU?
+                </p>
+                <svg
+                    class="panel__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                >
+                    <path
+                        d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                    />
+                </svg>
+
+                <div class="panel__wrapper--open">
+                    <p class="panel-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quas quaerat, exercitationem tempora architecto
+                        pariatur temporibus aspernatur. Nulla incidunt officia
+                        doloribus amet.
+                    </p>
+                    <ul class="panel-list">
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Minima.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </li>
+                        <li>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus!
+                        </li>
+                    </ul>
+                </div>
+            </button>
         </div>
-      </button>
-
-      <button class="panel">
-        <p class="number">02</p>
-        <p class="main-text">How long do I have to return my chair?</p>
-        <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-        >
-          <path
-            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-          />
-        </svg>
-
-        <div class="hidden">
-          <p class="hidden-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
-            quaerat, exercitationem tempora architecto pariatur temporibus
-            aspernatur. Nulla incidunt officia doloribus amet.
-          </p>
-          <ul class="hidden-list">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima.
-            </li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus!
-            </li>
-          </ul>
-        </div>
-      </button>
-      <button class="panel">
-        <p class="number">03</p>
-        <p class="main-text">Do you ship to countries outside the EU?</p>
-        <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-        >
-          <path
-            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-          />
-        </svg>
-
-        <div class="hidden">
-          <p class="hidden-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
-            quaerat, exercitationem tempora architecto pariatur temporibus
-            aspernatur. Nulla incidunt officia doloribus amet.
-          </p>
-          <ul class="hidden-list">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima.
-            </li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus!
-            </li>
-          </ul>
-        </div>
-      </button>
-    </div>
-  </body>
+    </body>
 </html>
