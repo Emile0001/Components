@@ -55,6 +55,9 @@ body {
 .panel__wrapper--open {
     grid-column: 2;
 }
+.panel__wrapper--closed {
+    display: none;
+}
 
 .panel-text {
     text-align: start;
@@ -78,8 +81,4 @@ body {
 
 .accordion__panel:hover {
     cursor: pointer;
-}
-
-.panel__wrapper--closed {
-    display: none;
 }
